@@ -79,3 +79,50 @@ const member = {
 
 member // {name: '0호', Symbol(): 12345}
 member[id] // 12345
+
+// =========================================
+// 🍎 Quiz
+// 화씨온도를 섭씨온도로 변환하기 
+
+// 섭씨온도 = (화씨온도 - 32) / 1.8 
+// 섭씨: celsius / 화씨: fahrenheit
+
+let fah = parseInt(prompt("변화할 화씨온도: "));
+let cel; 
+
+cel = ((fah - 32) / 1.8).toFixed(1); // toFixed(1) : 소수점 1자리 지정
+alert (`화씨 ${fah}는 섭씨 ${cel}도 입니다`);
+
+// =========================================
+// if...else if...else
+let score = prompt("프로그래밍 점수: ");
+
+if(score != null) {     // 입력값이 null 이 아닐때 = 뭔가를 입력했을때 
+    if (parseInt(score) >= 90){
+        alert ("A 학점"); 
+    } else if (parseInt(score) >= 80){
+        alert ("B 학점"); 
+    } else {
+        alert ("C 학점");
+    }}
+
+    // 삼항 연산자
+    if (num1 < num2) {small = num1;} else {small = num2}; // 아래처럼 쓸 수 있음 
+    
+    // `(조건) ? true일떄 실행할 명령 : false일떄 실행할 멸령`
+    small = (num1 < num2) ? num1 : num2; 
+
+// 🍎 Quiz
+// 짝수와 홀수를 구별하는 프로그램 만들기 
+let userNumber = prompt ("숫자를 입력하세요");
+if (userNumber !== null){
+    userNumber = parseInt(userNumber);
+    (userNumber % 2 === 0) ? alert(`${userNumber} : 짝수`) : alert(`${userNumber} : 홀수`);
+}
+
+// for문
+// `for (초깃값; 조건; 증가식) {...}`
+const students = ["Park", "Kim", "Lee", "Kang"];
+for (let i = 0; i < students.length; i++) {document.write(`${students[i]}`)}; 
+
+// forEach문
