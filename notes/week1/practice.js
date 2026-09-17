@@ -126,3 +126,75 @@ const students = ["Park", "Kim", "Lee", "Kang"];
 for (let i = 0; i < students.length; i++) {document.write(`${students[i]}`)}; 
 
 // forEach문
+
+
+
+// 🍎 Quiz
+// 1. userInput을 숫자형으로 변환해서 10을 더한 값을 출력하는 코드를 작성하세요.
+let userInput = "25";
+
+// 내꺼 🔽
+userInput = Number(userInput)+10;
+
+
+// 2. score가 90 이상이면 "A", 80 이상이면 "B", 70 이상이면 "C", 그 외엔 "F"를 출력하는
+// if...else if...else 문을 작성하세요.
+let score = 85;
+
+// 내꺼 🔽
+let score = prompt("Write your score");
+if (score >= 90) {
+    alert("A");
+} else if (score >= 80) 
+    {alert ("B")}
+  else if (score >= 70) {alert ("C")
+  } else {alert ("F")};
+
+
+// 3. 1부터 10까지 숫자 중 짝수만 출력하는 for문을 작성하세요.
+// for (초깃값; 조건; 증가식) {...}
+// 모르겠음
+// 해답 🔽
+for(let i = 1; i <= 10; i++){
+    if(i % 2 === 0){
+        console.log(i)
+    }
+};
+
+
+// 4. forEach를 사용해서 "사과를 먹었습니다.", "바나나를 먹었습니다.", "포도를 먹었습니다." 를
+// 순서대로 출력하는 코드를 작성하세요.
+// 배열명.forEach(콜백 함수){...} 
+let fruits = ["사과", "바나나", "포도"];
+
+// 내꺼 🔽
+fruits.forEach(function(){
+    console.log(fruits);
+})
+
+// 해답 🔽
+fruits.forEach(function(fruit){
+    console.log(fruit + "를 먹었습니다.");
+})
+
+
+// 5. 삼항 연산자를 사용해서 age가 19 이상이면 "성인", 아니면 "미성년자"를 출력하는 한 줄 코드를 작성하세요.
+// (조건) ? true일떄 실행할 명령 : false일떄 실행할 멸령`
+let age = 17;
+
+// 내꺼 🔽
+let age = prompt("Enter your age"); 
+age >= 19 ? alert("성인") : alert("미성년자");
+
+// ⚠️ let은 같은 스코프에서 재선언하면 Identifier 'score' has already been declared 에러가 나. 
+// ("재선언과 재할당" 부분 - let은 재선언 불가, 재할당만 가능)
+
+
+// 6. typeof를 사용해서 a, b, c의 자료형을 각각 출력하는 코드를 작성하세요.
+let a = null;
+let b = undefined;
+let c = "10";
+
+alert(typeof(a));
+alert(typeof(b));
+alert(typeof(c));

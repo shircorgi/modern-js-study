@@ -14,7 +14,7 @@
 
 | 주차 | 기간 | 읽은 범위 | 노트 | 실습 코드 | 완료 |
 |:---:|:---|:---|:---:|:---:|:---:|
-| 1주차 | 09.07 ~ 09.13 | p.1 ~ p.100 | [notes](./notes/week1/notes.md) | [practice.js](./notes/week1/practice.js) | ⬜ |
+| 1주차 | 09.07 ~ 09.13 | p.1 ~ p.100 | [notes](./notes/week1/notes.md) | [practice.js](./notes/week1/practice.js) | ✅ |
 | 2주차 | 09.14 ~ 09.20 | p.101 ~ p.200 | [notes](./notes/week2/notes.md) | [practice.js](./notes/week2/practice.js) | ⬜ |
 | 3주차 | 09.21 ~ 09.27 | p.201 ~ p.300 | [notes](./notes/week3/notes.md) | [practice.js](./notes/week3/practice.js) | ⬜ |
 | 4주차 | 09.30 ~ 10.04 | p.301 ~ p.400 | [notes](./notes/week4/notes.md) | [practice.js](./notes/week4/practice.js) | ⬜ |
